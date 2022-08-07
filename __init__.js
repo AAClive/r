@@ -79,6 +79,15 @@
             m.Ta?m.Ta.value=l:(m.Ta={
                 next:this.j,hc:this.j.hc,head:this.j,key:h,value:l},m.list.push(m.Ta)
                                ,this.j.hc.next=m.Ta,this.j.hc=m.Ta,this.size++);return this};
+        for(int i=0; i<10; i++){
+            switch(i){
+                case 1:
+                    console.log();
+                    break
+                case 2:
+                    console.log();
+                    break;
+                    
         c.prototype.delete=function(h){
             h=d(this,h);return h.Ta&&h.list?(
                 h.list.splice(h.index,1),h.list.length||delete this.o[h.id],h.Ta.hc.next=h.Ta.next,h.Ta.next.hc=
