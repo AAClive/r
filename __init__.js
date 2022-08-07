@@ -3,16 +3,21 @@
     a.prototype.constructor=a;
     if(gb)gb(a,b);else for(var c in b)
     if("prototype"!=c)if(Object.defineProperties){
-    var d=Object.getOwnPropertyDescriptor(b,c);
-    d&&Object.defineProperty(a,c,d)}
+        
+        var d=Object.getOwnPropertyDescriptor(b,c);
+        d&&Object.defineProperty(a,c,d)}
     else a[c]=b[c];a.Y=b.prototype};
     hb=function(a,b,c){
-    if(null==a)throw new TypeError("e`"+c);
-    if(b instanceof RegExp)
-    throw new TypeError("f`"+c);return a+""};
-    Za("String.prototype.startsWith",function(a){
-    return a?a:function(b,c){var d=hb(this,b,"startsWith"),e=d.length,f=b.length;c=Math.max(0,Math.min(c|0,d.length));
-    for(var g=0;g<f&&c<e;)if(d[c++]!=b[g++])return!1;return g>=f}});
+        
+        if(null==a)throw new TypeError("e`"+c);
+        if(b instanceof RegExp)
+        throw new TypeError("f`"+c);return a+""};
+        Za("String.prototype.startsWith",function(a){
+            return a?a:function(b,c){
+                var d=hb(this,b,"startsWith"),e=d.length,f=b.length;c=Math.max(0,Math.min(c|0,d.length));
+                
+    for(var g=0;g<f&&c<e;)
+        if(d[c++]!=b[g++])return!1;return g>=f}});
     Za("Array.prototype.find",function(a){return a?a:function(b,c){
     a:{var d=this;d instanceof String&&(d=String(d));for(var e=d.length,f=0;f<e;f++){
     var g=d[f];if(b.call(c,g,f,d)){b=g;break a}}b=void 0}return b}});
